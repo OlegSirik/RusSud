@@ -34,7 +34,7 @@ app.get('/callback', function (req, res) {
 });
 
 
-app.post('/callback/answerLogin.xml', function (req, res) { 
+app.put('/v1/card/:id/communication', function (req, res) { 
 
  
 var body = '';
