@@ -54,7 +54,7 @@ app.get('/v1/card/:id/', function (req, res) {
 
 app.get('/v1/card/:id/purchases', function (req, res) { 
  
- res.json({[]});
+ res.json([{}]);
 });
 
 app.post('/callback/answerLogin', function (req, res) { 
