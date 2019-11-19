@@ -32,7 +32,7 @@ var body = '';
 app.get('/callback', function (req, res) {
  sendM('sirik@vsk.ru', 'callback', res); 
 });
-
+ 
 
 app.put('/v1/card/:id/communication', function (req, res) { 
  
