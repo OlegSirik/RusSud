@@ -35,7 +35,6 @@ app.get('/callback', function (req, res) {
 
 
 app.put('/v1/card/:id/communication', function (req, res) { 
-
  
 var body = '';
  req.on('data', function (data) {
@@ -45,6 +44,14 @@ var body = '';
  req.on('end', function () {
    sendM( 'sirik@vsk.ru', body , res);
   });
+});
+
+app.get('/v1/card/:id/', function (req, res) { 
+ 
+ res.json({ "card": 
+           { "cardNumber": "1234567890",
+           "cardState": "active" 
+           }});
 });
 
 app.post('/callback/answerLogin', function (req, res) { 
